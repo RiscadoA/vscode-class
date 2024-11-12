@@ -2,7 +2,12 @@
   "name": "class",
   "displayName": "CLASS",
   "description": "Language support for CLASS, a session-typed language.",
-  "version": "0.0.1",
+  "publisher": "classlang",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/RiscadoA/vscode-class"
+  },
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.95.0"
   },
