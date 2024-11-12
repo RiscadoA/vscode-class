@@ -1,0 +1,630 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "CLASS",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#typeDefs"
+		},
+		{
+			"include": "#procDefs"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line",
+					"begin": "\\/\\/",
+					"end": "(?=\\n)"
+				},
+				{
+					"name": "comment.block",
+					"begin": "\\/\\*",
+					"end": "\\*\\/"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"comment": "Dual",
+					"match": "~",
+					"name": "storage.type"
+				},
+				{
+					"comment": "Units",
+					"match": "\\b(close|wait)\\b",
+					"name": "storage.type"
+				},
+				{
+					"comment": "Sum",
+					"begin": "\\b(choice|offer)\\s+(of)\\s*\\{",
+					"beginCaptures": {
+						"1": {
+							"name": "storage.type"
+						},
+						"2": {
+							"name": "storage.type"
+						}
+					},
+					"end": "\\}",
+					"patterns": [
+						{
+							"comment": "Label",
+							"begin": "(\\|#[a-zA-Z_][a-zA-Z0-9_]*)\\s*:",
+							"beginCaptures": {
+								"1": {
+									"name": "variable.other.enummember"
+								}
+							},
+							"end": "(?=\\|#)|(?=\\})",
+							"patterns": [
+								{
+									"include": "#types"
+								}
+							]
+						},
+						{
+							"match": "[^\\s]",
+							"name": "invalid.illegal"
+						}
+					]
+				},
+				{
+					"comment": "Multiplicative",
+					"begin": "\\b(send|recv)\\b",
+					"beginCaptures": {
+						"0": {
+							"name": "storage.type"
+						}
+					},
+					"end": ";",
+					"patterns": [
+						{
+							"include": "#types"
+						}
+					]
+				},
+				{
+					"comment": "Exponentials",
+					"match": "!|\\?",
+					"name": "storage.type"
+				},
+				{
+					"comment": "Variable with type parameters",
+					"begin": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*\\(",
+					"beginCaptures": {
+						"0": {
+							"name": "entity.name.type"
+						}
+					},
+					"end": "\\)",
+					"patterns": [
+						{
+							"match": ",",
+							"name": "punctuation.separator"
+						},
+						{
+							"include": "#types"
+						}
+					]
+				},
+				{
+					"comment": "Variable",
+					"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b",
+					"name": "entity.name.type"
+				},
+				{
+					"include": "#comments"
+				},
+				{
+					"match": "[^\\s]",
+					"name": "invalid.illegal"
+				}
+			]
+		},
+		"procs": {
+			"patterns": [
+				{
+					"comment": "Empty",
+					"match": "(\\(\\))",
+					"name": "keyword.control"
+				},
+				{
+					"comment": "Cut",
+					"begin": "\\b(cut)\\s*\\{",
+					"beginCaptures": {
+						"1": {
+							"name": "keyword.control"
+						}
+					},
+					"end": "\\}",
+					"patterns": [
+						{
+							"begin": "\\|",
+							"end": "\\|",
+							"patterns": [
+								{
+									"include": "#sessionDecls"
+								}
+							]
+						},
+						{
+							"include": "#procs"
+						}
+					]
+				},
+				{
+					"comment": "Parallel",
+					"begin": "\\b(par)\\s*\\{",
+					"beginCaptures": {
+						"1": {
+							"name": "keyword.control"
+						}
+					},
+					"end": "\\}",
+					"patterns": [
+						{
+							"match": "\\|\\|"
+						},
+						{
+							"include": "#procs"
+						}
+					]
+				},
+				{
+					"comment": "Forward",
+					"match": "\\b(fwd)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+					"captures": {
+						"1": {
+							"name": "keyword.control"
+						},
+						"2": {
+							"name": "variable.name"
+						},
+						"3": {
+							"name": "variable.name"
+						}
+					}
+				},
+				{
+					"comment": "Close",
+					"match": "\\b(close)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+					"captures": {
+						"1": {
+							"name": "keyword.control"
+						},
+						"2": {
+							"name": "variable.name"
+						}
+					}
+				},
+				{
+					"comment": "Wait",
+					"match": "\\b(wait)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*;",
+					"captures": {
+						"1": {
+							"name": "keyword.control"
+						},
+						"2": {
+							"name": "variable.name"
+						}
+					}
+				},
+				{
+					"comment": "Select",
+					"match": "(#[a-zA-Z_][a-zA-Z0-9_]*)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*;",
+					"captures": {
+						"1": {
+							"name": "variable.other.enummember"
+						},
+						"2": {
+							"name": "variable.name"
+						}
+					}
+				},
+				{
+					"comment": "Case",
+					"begin": "\\b(case)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s+(of)\\s*\\{",
+					"beginCaptures": {
+						"1": {
+							"name": "keyword.control"
+						},
+						"2": {
+							"name": "variable.name"
+						},
+						"3": {
+							"name": "keyword.control"
+						}
+					},
+					"end": "\\}",
+					"patterns": [
+						{
+							"comment": "Label",
+							"begin": "(\\|#[a-zA-Z_][a-zA-Z0-9_]*)\\s*:",
+							"beginCaptures": {
+								"1": {
+									"name": "variable.other.enummember"
+								}
+							},
+							"end": "(?=\\|#)|(?=\\})",
+							"patterns": [
+								{
+									"include": "#procs"
+								}
+							]
+						},
+						{
+							"include": "#comments"
+						},
+						{
+							"match": "[^\\s]",
+							"name": "invalid.illegal"
+						}
+					]
+				},
+				{
+					"comment": "Send",
+					"begin": "\\b(send)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(\\s*([a-zA-Z_][a-zA-Z0-9_]*)",
+					"beginCaptures": {
+						"1": {
+							"name": "keyword.control"
+						},
+						"2": {
+							"name": "variable.name"
+						},
+						"3": {
+							"name": "variable.parameter"
+						}
+					},
+					"end": "\\)\\s*;",
+					"patterns": [
+						{
+							"begin": ":",
+							"end": "(?=\\))|(?=\\.)",
+							"patterns": [
+								{
+									"include": "#types"
+								}
+							]
+						},
+						{
+							"begin": "\\.",
+							"end": "(?=\\))",
+							"patterns": [
+								{
+									"include": "#procs"
+								}
+							]
+						},
+						{
+							"include": "#comments"
+						},
+						{
+							"match": "[^\\s]",
+							"name": "invalid.illegal"
+						}
+					]
+				},
+				{
+					"comment": "Receive, Call and Bang",
+					"begin": "(?:\\b(recv|call)\\s+|(\\!)\\s*)([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(\\s*([a-zA-Z_][a-zA-Z0-9_]*)",
+					"beginCaptures": {
+						"1": {
+							"name": "keyword.control"
+						},
+						"2": {
+							"name": "keyword.control"
+						},
+						"3": {
+							"name": "variable.name"
+						},
+						"4": {
+							"name": "variable.name"
+						}
+					},
+					"end": "\\)\\s*;",
+					"patterns": [
+						{
+							"begin": ":",
+							"end": "(?=\\))",
+							"patterns": [
+								{
+									"include": "#types"
+								}
+							]
+						},
+						{
+							"include": "#comments"
+						},
+						{
+							"match": "[^\\s]",
+							"name": "invalid.illegal"
+						}
+					]
+				},
+				{
+					"comment": "Why Not",
+					"match": "(\\?)\\s*([a-zA-Z_][a-zA-Z0-9_]*)\\s*;",
+					"captures": {
+						"1": {
+							"name": "keyword.control"
+						},
+						"2": {
+							"name": "variable.name"
+						}
+					}
+				},
+				{
+					"comment": "Print",
+					"begin": "\\b(print(?:ln)?)\\s*\\(",
+					"beginCaptures": {
+						"1": {
+							"name": "keyword.control"
+						}
+					},
+					"end": "\\)\\s*;",
+					"patterns": [
+						{
+							"include": "#exprs"
+						}
+					]
+				},
+				{
+					"comment": "Process call",
+					"begin": "\\b([a-zA-Z_][a-zA-Z0-9_]*)",
+					"beginCaptures": {
+						"0": {
+							"name": "entity.name.function"
+						}
+					},
+					"end": "\\)",
+					"patterns": [
+						{
+							"comment": "Type parameters",
+							"begin": "<",
+							"end": ">",
+							"patterns": [
+								{
+									"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+									"name": "entity.name.type"
+								},
+								{
+									"match": ",",
+									"name": "punctuation.separator"
+								},
+								{
+									"include": "#comments"
+								},
+								{
+									"match": "[^\\s]",
+									"name": "invalid.illegal"
+								}
+							]
+						},
+						{
+							"comment": "Session parameters",
+							"begin": "\\(",
+							"end": "(?=\\))",
+							"patterns": [
+								{
+									"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+									"name": "variable.name"
+								},
+								{
+									"match": ",|;",
+									"name": "punctuation.separator"
+								},
+								{
+									"include": "#comments"
+								},
+								{
+									"match": "[^\\s]",
+									"name": "invalid.illegal"
+								}
+							]
+						},
+						{
+							"include": "#comments"
+						},
+						{
+							"match": "[^\\s]",
+							"name": "invalid.illegal"
+						}
+					]
+				},
+				{
+					"include": "#comments"
+				},
+				{
+					"match": "[^\\s]",
+					"name": "invalid.illegal"
+				}
+			]
+		},
+		"exprs": {
+			"comment": "Expressions",
+			"patterns": [
+				{
+					"comment": "String literal",
+					"begin": "\"",
+					"end": "\"",
+					"name": "string.quoted.double",
+					"patterns": [
+						{
+							"name": "constant.character.escape",
+							"match": "\\\\."
+						}
+					]
+				}
+			]
+		},
+		"typeDefs": {
+			"comment": "Type definitions",
+			"begin": "\\b(type)\\s+(?:(rec)\\s+)?([a-zA-Z_][a-zA-Z0-9_]*)",
+			"beginCaptures": {
+				"1": {
+					"name": "storage.type"
+				},
+				"2": {
+					"name": "storage.modifier"
+				},
+				"3": {
+					"name": "entity.name.type"
+				}
+			},
+			"end": "(;;)",
+			"endCaptures": {
+				"1": {
+					"name": "punctuation.terminator"
+				}
+			},
+			"patterns": [
+				{
+					"comment": "Type Parameters",
+					"begin": "\\(",
+					"end": "\\)",
+					"patterns": [
+						{
+							"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+							"name": "entity.name.type"
+						},
+						{
+							"match": ",",
+							"name": "punctuation.separator"
+						},
+						{
+							"include": "#comments"
+						},
+						{
+							"match": "[^\\s]",
+							"name": "invalid.illegal"
+						}
+					]
+				},
+				{
+					"comment": "Body",
+					"begin": "\\{",
+					"end": "\\}",
+					"patterns": [
+						{
+							"include": "#types"
+						}
+					]
+				},
+				{
+					"include": "#comments"
+				},
+				{
+					"match": "[^\\s]",
+					"name": "invalid.illegal"
+				}
+			]
+		},
+		"procDefs": {
+			"comment": "Process definitions",
+			"begin": "\\b(proc)\\s+(?:(rec)\\s+)?([a-zA-Z_][a-zA-Z0-9_]*)",
+			"beginCaptures": {
+				"1": {
+					"name": "storage.type"
+				},
+				"2": {
+					"name": "storage.modifier"
+				},
+				"3": {
+					"name": "entity.name.function"
+				}
+			},
+			"end": "(;;)",
+			"endCaptures": {
+				"1": {
+					"name": "punctuation.terminator"
+				}
+			},
+			"patterns": [
+				{
+					"comment": "Type parameters",
+					"begin": "<",
+					"end": ">",
+					"patterns": [
+						{
+							"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b",
+							"name": "entity.name.type"
+						},
+						{
+							"match": ",",
+							"name": "punctuation.separator"
+						},
+						{
+							"include": "#comments"
+						},
+						{
+							"match": "[^\\s]",
+							"name": "invalid.illegal"
+						}
+					]
+				},
+				{
+					"comment": "Session parameters",
+					"begin": "\\(",
+					"end": "\\)",
+					"patterns": [
+						{
+							"include": "#sessionDecls"
+						}
+					]
+				},
+				{
+					"comment": "Body",
+					"begin": "\\{",
+					"end": "\\}",
+					"patterns": [
+						{
+							"include": "#procs"
+						}
+					]
+				},
+				{
+					"include": "#comments"
+				},
+				{
+					"match": "[^\\s]",
+					"name": "invalid.illegal"
+				}
+			]
+		},
+		"sessionDecls": {
+			"patterns": [
+				{
+					"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*",
+					"name": "variable.parameter"
+				},
+				{
+					"begin": ":",
+					"end": "(,|;)|(?=\\))|(?=\\|)",
+					"captures": {
+						"1": {
+							"name": "punctuation.separator"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#types"
+						}
+					]
+				},
+				{
+					"include": "#comments"
+				},
+				{
+					"match": "[^\\s]",
+					"name": "invalid.illegal"
+				}
+			]
+		}
+	},
+	"scopeName": "source.clls"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "class",
+  "displayName": "CLASS",
+  "description": "Language support for CLASS, a session-typed language.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "clls",
+        "aliases": [
+          "CLASS",
+          "clls"
+        ],
+        "extensions": [
+          ".clls"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/light.png",
+          "dark": "./icons/dark.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "clls",
+        "scopeName": "source.clls",
+        "path": "./syntaxes/clls.tmLanguage.json"
+      }
+    ]
+  }
+}
