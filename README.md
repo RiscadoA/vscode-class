@@ -4,10 +4,6 @@ This extension provides basic language support for [CLASS](http://ctp.di.fct.unl
 
 Authors: Ricardo Antunes
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
 ## Release Notes
 
 ### 1.0.0
