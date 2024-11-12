@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "class" extension will be documented in this file.
+All notable changes to the extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+## [v1.0.0] - 2024-11-12
 
 - Initial release
+
+[v1.0.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.0.0
