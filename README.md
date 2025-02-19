@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.1.1
+
+Fixed include statement syntax.
+
 ### 1.1.0
 
 Added support for unfold and include statements. 
