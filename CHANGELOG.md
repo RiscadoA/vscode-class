@@ -5,6 +5,7 @@ All notable changes to the extension will be documented in this file.
 ## [Unreleased]
 
 - Support for `unfold` processes.
+- Support for `include` statements.
 
 ## [v1.0.0] - 2024-11-12
 
