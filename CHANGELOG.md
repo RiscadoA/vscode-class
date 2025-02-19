@@ -2,7 +2,7 @@
 
 All notable changes to the extension will be documented in this file.
 
-## [Unreleased]
+## [v1.1.0] - 2025-02-19
 
 - Support for `unfold` processes.
 - Support for `include` statements.

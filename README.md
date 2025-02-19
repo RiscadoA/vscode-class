@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.1.0
+
+Added support for unfold and include statements. 
+
 ### 1.0.0
 
 Initial release, containing basic support for most features of the language.
