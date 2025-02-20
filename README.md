@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.2.0
+
+Added the `corec` keyword.
+
 ### 1.1.1
 
 Fixed include statement syntax.
