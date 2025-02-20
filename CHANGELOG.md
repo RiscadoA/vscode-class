@@ -15,4 +15,6 @@ All notable changes to the extension will be documented in this file.
 
 - Initial release
 
+[v1.1.1]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.1.1
+[v1.1.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.1.0
 [v1.0.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.0.0
