@@ -579,7 +579,7 @@
 			]
 		},
 		"typeDefs": {
-			"comment": "Type definitions",
+			"comment": "Type Definitions",
 			"begin": "\\b(type)\\s+(?:(rec|corec)\\s+)?([a-zA-Z_][a-zA-Z0-9_]*)",
 			"beginCaptures": {
 				"1": {
@@ -599,6 +599,18 @@
 				}
 			},
 			"patterns": [
+				{
+					"comment": "Chained Type Definition",
+					"match": "\\b(and)\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
+					"captures": {
+						"1": {
+							"name": "storage.type"
+						},
+						"2": {
+							"name": "entity.name.type"
+						}
+					}
+				},
 				{
 					"comment": "Type Parameters",
 					"begin": "\\(",

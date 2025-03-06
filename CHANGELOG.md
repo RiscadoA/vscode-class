@@ -4,6 +4,7 @@ All notable changes to the extension will be documented in this file.
 
 ## Unreleased
 
+- Add chained type definitions.
 - Add `letc` process.
 - Allow white space after sum/choice labels.
 - Add `sleep` process.
