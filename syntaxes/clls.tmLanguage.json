@@ -613,6 +613,11 @@
 			"comment": "Expressions",
 			"patterns": [
 				{
+					"comment": "Session",
+					"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)",
+					"name": "variable.name"
+				},
+				{
 					"comment": "String literal",
 					"begin": "\"",
 					"end": "\"",
