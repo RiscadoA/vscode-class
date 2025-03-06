@@ -339,8 +339,8 @@
 					]
 				},
 				{
-					"comment": "Receive, Call and Bang",
-					"begin": "(?:\\b(recv|call)\\s+|(\\!)\\s*)([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(\\s*([a-zA-Z_][a-zA-Z0-9_]*)",
+					"comment": "Receive, Call, Take and Bang",
+					"begin": "(?:\\b(recv|call|take)\\s+|(\\!)\\s*)([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(\\s*([a-zA-Z_][a-zA-Z0-9_]*)",
 					"beginCaptures": {
 						"1": {
 							"name": "keyword.control"

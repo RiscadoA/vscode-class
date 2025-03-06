@@ -4,6 +4,7 @@ All notable changes to the extension will be documented in this file.
 
 ## Unreleased
 
+- Add `take` processes.
 - Add `put` processes.
 
 ## [v1.2.0] - 2025-02-20
