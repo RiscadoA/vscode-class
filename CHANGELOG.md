@@ -4,6 +4,7 @@ All notable changes to the extension will be documented in this file.
 
 ## Unreleased
 
+- Add `if` processes.
 - Add `pair` type.
 - Add `drop` processes.
 - Add `use` processes.
