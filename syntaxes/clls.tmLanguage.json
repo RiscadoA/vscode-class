@@ -104,7 +104,7 @@
 				},
 				{
 					"comment": "Multiplicative",
-					"begin": "\\b(send|recv)\\b",
+					"begin": "\\b(send|recv|pair)\\b",
 					"beginCaptures": {
 						"0": {
 							"name": "storage.type"
