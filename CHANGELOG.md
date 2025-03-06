@@ -4,6 +4,8 @@ All notable changes to the extension will be documented in this file.
 
 ## Unreleased
 
+- Add expression operators.
+- Add integer and boolean literals.
 - Add `if` processes.
 - Add `pair` type.
 - Add `drop` processes.

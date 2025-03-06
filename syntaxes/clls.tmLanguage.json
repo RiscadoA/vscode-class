@@ -512,6 +512,21 @@
 							"match": "\\\\."
 						}
 					]
+				},
+				{
+					"comment": "Integer literal",
+					"match": "\\b[0-9]+\\b",
+					"name": "constant.numeric"
+				},
+				{
+					"comment": "Boolean literal",
+					"match": "\\b(true|false)\\b",
+					"name": "constant.language"
+				},
+				{
+					"comment": "Operators",
+					"match": "\\+|-|\\*|/|%|\\^|\\|\\||&&|==|!=|<=|>=|<|>",
+					"name": "keyword.operator"
 				}
 			]
 		},
