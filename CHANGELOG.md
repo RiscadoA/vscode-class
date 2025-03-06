@@ -4,6 +4,7 @@ All notable changes to the extension will be documented in this file.
 
 ## Unreleased
 
+- Allow close statements to end with a semicolon.
 - Add `take` processes.
 - Add `put` processes.
 
