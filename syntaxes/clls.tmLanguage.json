@@ -829,13 +829,12 @@
 					"name": "variable.parameter"
 				},
 				{
+					"match": ",|;",
+					"name": "punctuation.separator"	
+				},
+				{
 					"begin": ":",
-					"end": "(,|;)|(?=\\))|(?=\\|)",
-					"captures": {
-						"1": {
-							"name": "punctuation.separator"
-						}
-					},
+					"end": "(?=,|;|\\)|\\|)",
 					"patterns": [
 						{
 							"include": "#types"

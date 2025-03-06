@@ -4,6 +4,7 @@ All notable changes to the extension will be documented in this file.
 
 ## Unreleased
 
+- Allow process definition arguments to start with `;`.
 - Add `share` process composition.
 - Allow expressions in process call arguments.
 - Allow sessions in expressions.
