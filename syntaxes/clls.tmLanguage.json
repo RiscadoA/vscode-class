@@ -575,8 +575,7 @@
 							"end": "(?=\\))",
 							"patterns": [
 								{
-									"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b",
-									"name": "variable.name"
+									"include": "#exprs"
 								},
 								{
 									"match": ",|;",
