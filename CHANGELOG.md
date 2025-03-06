@@ -4,6 +4,7 @@ All notable changes to the extension will be documented in this file.
 
 ## Unreleased
 
+- Add `sleep` process.
 - Add expression operators.
 - Add integer and boolean literals.
 - Add `if` processes.
