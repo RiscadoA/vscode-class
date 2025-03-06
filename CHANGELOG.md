@@ -2,6 +2,10 @@
 
 All notable changes to the extension will be documented in this file.
 
+## Unreleased
+
+- Add `put` processes.
+
 ## [v1.2.0] - 2025-02-20
 
 - Add `corec` keyword.

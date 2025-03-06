@@ -296,8 +296,8 @@
 					]
 				},
 				{
-					"comment": "Send",
-					"begin": "\\b(send)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(\\s*([a-zA-Z_][a-zA-Z0-9_]*)",
+					"comment": "Send and Put",
+					"begin": "\\b(send|put)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(\\s*([a-zA-Z_][a-zA-Z0-9_]*)",
 					"beginCaptures": {
 						"1": {
 							"name": "keyword.control"
