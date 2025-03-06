@@ -590,6 +590,16 @@
 					"comment": "Operators",
 					"match": "\\+|-|\\*|/|%|\\^|\\|\\||&&|==|!=|<=|>=|<|>",
 					"name": "keyword.operator"
+				},
+				{
+					"comment": "Parentheses",
+					"begin": "\\(",
+					"end": "\\)",
+					"patterns": [
+						{
+							"include": "#exprs"
+						}
+					]
 				}
 			]
 		},
