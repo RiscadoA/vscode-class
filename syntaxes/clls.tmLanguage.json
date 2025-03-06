@@ -83,13 +83,13 @@
 					"patterns": [
 						{
 							"comment": "Label",
-							"begin": "(\\|#[a-zA-Z_][a-zA-Z0-9_]*)\\s*:",
+							"begin": "\\|\\s*(#[a-zA-Z_][a-zA-Z0-9_]*)\\s*:",
 							"beginCaptures": {
 								"1": {
 									"name": "variable.other.enummember"
 								}
 							},
-							"end": "(?=\\|#)|(?=\\})",
+							"end": "(?=\\|)|(?=\\})",
 							"patterns": [
 								{
 									"include": "#types"
@@ -273,13 +273,13 @@
 					"patterns": [
 						{
 							"comment": "Label",
-							"begin": "(\\|#[a-zA-Z_][a-zA-Z0-9_]*)\\s*:",
+							"begin": "\\|\\s*(#[a-zA-Z_][a-zA-Z0-9_]*)\\s*:",
 							"beginCaptures": {
 								"1": {
 									"name": "variable.other.enummember"
 								}
 							},
-							"end": "(?=\\|#)|(?=\\})",
+							"end": "(?=\\|)|(?=\\})",
 							"patterns": [
 								{
 									"include": "#procs"
