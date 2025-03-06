@@ -727,7 +727,7 @@
 		},
 		"procDefs": {
 			"comment": "Process definitions",
-			"begin": "\\b(proc)\\s+(?:(rec|unsafe_rec)\\s+)?([a-zA-Z_][a-zA-Z0-9_]*)",
+			"begin": "\\b(proc)\\s+(?:(rec|unsafe_rec|gen_rec)\\s+)?([a-zA-Z_][a-zA-Z0-9_]*)",
 			"beginCaptures": {
 				"1": {
 					"name": "storage.type"

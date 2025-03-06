@@ -4,6 +4,7 @@ All notable changes to the extension will be documented in this file.
 
 ## Unreleased
 
+- Add `gen_rec` process modifier.
 - Add `cell` process.
 - Add `release` process.
 - Allow parentheses on expressions.
