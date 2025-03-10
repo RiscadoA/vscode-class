@@ -2,6 +2,10 @@
 
 All notable changes to the extension will be documented in this file.
 
+## [v1.4.0] - 2025-03-10
+
+- Add `let` and `let!` processes.
+
 ## [v1.3.0] - 2025-03-06
 
 - Allow expressions in send statements.
@@ -49,6 +53,7 @@ All notable changes to the extension will be documented in this file.
 
 - Initial release
 
+[v1.4.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.4.0
 [v1.3.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.3.0
 [v1.2.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.2.0
 [v1.1.1]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.1.1

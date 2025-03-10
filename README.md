@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.4.0
+
+Added the `let` and `let!` processes.
+
 ### 1.3.0
 
 Added most of affine and shared state features of CLASS (and some other things), along with the new arrow and let syntax.
