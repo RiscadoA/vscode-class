@@ -2,6 +2,12 @@
 
 All notable changes to the extension will be documented in this file.
 
+## [v1.5.0] - 2025-03-21
+
+- Add `int`, `coint`, `lint` and `colint` types.
+- Add `lbool` and `colbool` types.
+- Add `lstring` and `colstring` types.
+
 ## [v1.4.1] - 2025-03-21
 
 - Allow variables in `let` and `let!` processes.
@@ -57,6 +63,7 @@ All notable changes to the extension will be documented in this file.
 
 - Initial release
 
+[v1.5.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.5.0
 [v1.4.1]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.4.1
 [v1.4.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.4.0
 [v1.3.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.3.0

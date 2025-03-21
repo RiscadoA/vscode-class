@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.5.0
+
+Added the basic primitive types.
+
 ### 1.4.1
 
 Support variables in `let` and `let!` processes.

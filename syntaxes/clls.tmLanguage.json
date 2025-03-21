@@ -69,6 +69,21 @@
 					"name": "storage.type"
 				},
 				{
+					"comment": "Integers",
+					"match": "\\b(int|coint|lint|colint)\\b",
+					"name": "storage.type"
+				},
+				{
+					"comment": "Booleans",
+					"match": "\\b(lbool|colbool)\\b",
+					"name": "storage.type"
+				},
+				{
+					"comment": "Strings",
+					"match": "\\b(lstring|colstring)\\b",
+					"name": "storage.type"
+				},
+				{
 					"comment": "Sum",
 					"begin": "\\b(choice|offer)\\s+(of)\\s*\\{",
 					"beginCaptures": {
