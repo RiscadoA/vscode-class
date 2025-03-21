@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.4.1
+
+Support variables in `let` and `let!` processes.
+
 ### 1.4.0
 
 Added the `let` and `let!` processes.
