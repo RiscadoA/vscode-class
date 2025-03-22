@@ -696,6 +696,11 @@
 					"name": "keyword.operator"
 				},
 				{
+					"comment": "Alphanumerical operators",
+					"match": "\\band\\b|\\bor\\b|\\bnot\\b",
+					"name": "keyword.control"
+				},
+				{
 					"comment": "Parentheses",
 					"begin": "\\(",
 					"end": "\\)",

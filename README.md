@@ -6,9 +6,9 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
-### Unreleased
+### 1.6.0
 
-Fix `true` and `false` keywords.
+Fix `true` and `false` keywords, added `and`, `or` and `not`.
 
 ### 1.5.0
 

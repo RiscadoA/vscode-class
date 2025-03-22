@@ -2,8 +2,9 @@
 
 All notable changes to the extension will be documented in this file.
 
-## Unreleased
+## [v1.6.0] - 2025-03-22
 
+- Add `and`, `or` and `not` operators.
 - Fix `true` and `false` keywords.
 
 ## [v1.5.0] - 2025-03-21
@@ -67,6 +68,7 @@ All notable changes to the extension will be documented in this file.
 
 - Initial release
 
+[v1.6.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.6.0
 [v1.5.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.5.0
 [v1.4.1]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.4.1
 [v1.4.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.4.0
