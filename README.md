@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### Unreleased
+
+Fix `true` and `false` keywords.
+
 ### 1.5.0
 
 Added the basic primitive types.

@@ -2,6 +2,10 @@
 
 All notable changes to the extension will be documented in this file.
 
+## Unreleased
+
+- Fix `true` and `false` keywords.
+
 ## [v1.5.0] - 2025-03-21
 
 - Add `int`, `coint`, `lint` and `colint` types.
