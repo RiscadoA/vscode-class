@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.7.0
+
+Add `sendty` and `recvty`.
+
 ### 1.6.0
 
 Fix `true` and `false` keywords, added `and`, `or` and `not`.

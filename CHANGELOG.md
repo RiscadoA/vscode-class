@@ -2,6 +2,10 @@
 
 All notable changes to the extension will be documented in this file.
 
+## [v1.7.0] - 2025-03-25
+
+- Add `sendty` and `recvty` processes.
+
 ## [v1.6.0] - 2025-03-22
 
 - Add `and`, `or` and `not` operators.
@@ -68,6 +72,7 @@ All notable changes to the extension will be documented in this file.
 
 - Initial release
 
+[v1.7.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.7.0
 [v1.6.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.6.0
 [v1.5.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.5.0
 [v1.4.1]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.4.1
