@@ -8,7 +8,7 @@ Authors: Ricardo Antunes
 
 ### 1.7.0
 
-Add `sendty` and `recvty`.
+Add `sendty` and `recvty` processes and types.
 
 ### 1.6.0
 

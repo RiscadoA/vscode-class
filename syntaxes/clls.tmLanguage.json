@@ -133,6 +133,21 @@
 					]
 				},
 				{
+					"comment": "Polymorphism",
+					"begin": "\\b(sendty|recvty)\\b",
+					"beginCaptures": {
+						"0": {
+							"name": "storage.type"
+						}
+					},
+					"end": ";",
+					"patterns": [
+						{
+							"include": "#types"
+						}
+					]
+				},
+				{
 					"comment": "Exponentials, Affine and State",
 					"match": "!|\\?|\\baffine\\b|\\bstate\\b",
 					"name": "storage.type"

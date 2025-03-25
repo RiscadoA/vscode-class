@@ -5,6 +5,7 @@ All notable changes to the extension will be documented in this file.
 ## [v1.7.0] - 2025-03-25
 
 - Add `sendty` and `recvty` processes.
+- Add `sendty` and `recvty` types.
 
 ## [v1.6.0] - 2025-03-22
 
