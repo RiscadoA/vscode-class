@@ -2,6 +2,10 @@
 
 All notable changes to the extension will be documented in this file.
 
+## [v1.8.0] - 2025-04-04
+
+- Add `fwd!` process.
+
 ## [v1.7.0] - 2025-03-25
 
 - Add `sendty` and `recvty` processes.
@@ -73,6 +77,7 @@ All notable changes to the extension will be documented in this file.
 
 - Initial release
 
+[v1.8.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.8.0
 [v1.7.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.7.0
 [v1.6.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.6.0
 [v1.5.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.5.0

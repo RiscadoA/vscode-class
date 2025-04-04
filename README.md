@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.8.0
+
+Add `fwd!` process.
+
 ### 1.7.0
 
 Add `sendty` and `recvty` processes and types.
