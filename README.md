@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.9.0
+
+Add `ccut` and `cpar` processes.
+
 ### 1.8.0
 
 Add `fwd!` process.

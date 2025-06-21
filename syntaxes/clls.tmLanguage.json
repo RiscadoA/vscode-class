@@ -194,7 +194,7 @@
 				},
 				{
 					"comment": "Cut",
-					"begin": "\\b(cut)\\s*\\{",
+					"begin": "\\b(c?cut)\\s*\\{",
 					"beginCaptures": {
 						"1": {
 							"name": "keyword.control"
@@ -251,7 +251,7 @@
 				},
 				{
 					"comment": "Parallel",
-					"begin": "\\b(par)\\s*\\{",
+					"begin": "\\b(c?par)\\s*\\{",
 					"beginCaptures": {
 						"1": {
 							"name": "keyword.control"

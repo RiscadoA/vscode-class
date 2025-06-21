@@ -2,6 +2,10 @@
 
 All notable changes to the extension will be documented in this file.
 
+## [v1.9.0] - 2025-06-21
+
+- Add `cpar` and `ccut` processes.
+
 ## [v1.8.0] - 2025-04-04
 
 - Add `fwd!` process.
@@ -77,6 +81,7 @@ All notable changes to the extension will be documented in this file.
 
 - Initial release
 
+[v1.9.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.9.0
 [v1.8.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.8.0
 [v1.7.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.7.0
 [v1.6.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.6.0
