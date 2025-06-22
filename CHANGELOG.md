@@ -5,6 +5,7 @@ All notable changes to the extension will be documented in this file.
 ## [v1.10.0] - TODO
 
 - Add `coaffine` type.
+- Add `usage` type.
 - Handle `cell` with expressions.
 
 ## [v1.9.0] - 2025-06-21

@@ -8,7 +8,7 @@ Authors: Ricardo Antunes
 
 ### 1.10.0
 
-Add `coaffine` type, handle `cell` with expression.
+Add `coaffine` and `usage` types, handle `cell` with expression.
 
 ### 1.9.0
 
