@@ -149,7 +149,7 @@
 				},
 				{
 					"comment": "Exponentials, Affine and State",
-					"match": "!|\\?|\\baffine\\b|\\bcoaffine\\b|\\bstate\\b|\\busage\\b",
+					"match": "!|\\?|\\baffine\\b|\\bcoaffine\\b|\\bstatel?\\b|\\busagel?\\b",
 					"name": "storage.type"
 				},
 				{

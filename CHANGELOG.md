@@ -6,6 +6,8 @@ All notable changes to the extension will be documented in this file.
 
 - Add `coaffine` type.
 - Add `usage` type.
+- Add `statel` type.
+- Add `usagel` type.
 - Handle `cell` with expressions.
 
 ## [v1.9.0] - 2025-06-21
