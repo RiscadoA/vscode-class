@@ -2,6 +2,10 @@
 
 All notable changes to the extension will be documented in this file.
 
+## [v1.10.0] - TODO
+
+- Add `coaffine` type.
+
 ## [v1.9.0] - 2025-06-21
 
 - Add `cpar` and `ccut` processes.
@@ -81,6 +85,7 @@ All notable changes to the extension will be documented in this file.
 
 - Initial release
 
+[v1.10.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.10.0
 [v1.9.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.9.0
 [v1.8.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.8.0
 [v1.7.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.7.0

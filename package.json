@@ -7,7 +7,7 @@
     "type": "github",
     "url": "https://github.com/RiscadoA/vscode-class"
   },
-  "version": "1.9.0",
+  "version": "1.10.0",
   "engines": {
     "vscode": "^1.95.0"
   },

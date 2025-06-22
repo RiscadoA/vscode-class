@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.10.0
+
+Add `coaffine` type.
+
 ### 1.9.0
 
 Add `ccut` and `cpar` processes.
