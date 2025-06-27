@@ -269,7 +269,7 @@
 				},
 				{
 					"comment": "Share",
-					"begin": "\\b(share)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\{",
+					"begin": "\\b(s?share)\\s+([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\{",
 					"beginCaptures": {
 						"1": {
 							"name": "keyword.control"

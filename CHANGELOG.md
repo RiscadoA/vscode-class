@@ -2,13 +2,14 @@
 
 All notable changes to the extension will be documented in this file.
 
-## [v1.10.0] - TODO
+## [v1.10.0] - 2025-06-27
 
 - Add `coaffine` type.
 - Add `usage` type.
 - Add `statel` type.
 - Add `usagel` type.
 - Handle `cell` with expressions.
+- Add `sshare` process.
 
 ## [v1.9.0] - 2025-06-21
 

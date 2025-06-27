@@ -8,7 +8,7 @@ Authors: Ricardo Antunes
 
 ### 1.10.0
 
-Add `coaffine`, `usage`, `usagel` and `statel` types, handle `cell` with expression.
+Add `coaffine`, `usage`, `usagel` and `statel` types, handle `cell` with expression and `sshare` process.
 
 ### 1.9.0
 
