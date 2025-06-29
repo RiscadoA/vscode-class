@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.11.0
+
+Add `scan` process.
+
 ### 1.10.0
 
 Add `coaffine`, `usage`, `usagel` and `statel` types, handle `cell` with expression and `sshare` process.

@@ -2,6 +2,10 @@
 
 All notable changes to the extension will be documented in this file.
 
+## [v1.11.0] - 2025-06-29
+
+- Add `scan` process.
+
 ## [v1.10.0] - 2025-06-27
 
 - Add `coaffine` type.
@@ -90,6 +94,7 @@ All notable changes to the extension will be documented in this file.
 
 - Initial release
 
+[v1.11.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.11.0
 [v1.10.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.10.0
 [v1.9.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.9.0
 [v1.8.0]: https://github.com/RiscadoA/vscode-class/releases/tag/v1.8.0
