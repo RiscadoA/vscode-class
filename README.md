@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.12.0
+
+Add `unreachable` process.
+
 ### 1.11.0
 
 Add `scan` process.
