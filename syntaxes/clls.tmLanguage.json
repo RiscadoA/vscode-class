@@ -887,6 +887,18 @@
 			},
 			"patterns": [
 				{
+					"comment": "Chained Type Definition",
+					"match": "\\b(and)\\s+([a-zA-Z_][a-zA-Z0-9_]*)",
+					"captures": {
+						"1": {
+							"name": "storage.type"
+						},
+						"2": {
+							"name": "entity.name.function"
+						}
+					}
+				},
+				{
 					"comment": "Type parameters",
 					"begin": "<",
 					"end": ">",

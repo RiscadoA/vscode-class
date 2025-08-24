@@ -6,6 +6,10 @@ Authors: Ricardo Antunes
 
 ## Release Notes
 
+### 1.13.0
+
+Add chained process definitions.
+
 ### 1.12.0
 
 Add `unreachable` process.
